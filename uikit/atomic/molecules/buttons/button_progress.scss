@@ -1,0 +1,4 @@
+.btn-progress{
+    @include btn($primary, $secundary, $onPrimary);
+    width: 100%;
+}

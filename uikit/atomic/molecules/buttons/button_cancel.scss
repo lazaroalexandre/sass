@@ -1,0 +1,4 @@
+.btn-cancel{
+    @include btn($onSecundary, $ternary, $onTernary);
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+@import '../../../tokens/token.scss';
+
+@mixin button-style($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+    width: 100%;
+    &:hover {
+        background-color: darken($color: $background-color, $amount: 5);
+    }
+}
+
+.btn {
+    padding: 8px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-family: $font-family;
+    font-weight: $font-weight;
+
+    &.btn-progress {
+        @include button-style($primary, $secundary);
+    }
+    &.btn-cancel{
+        @include button-style($onSecundary, $ternary)
+    }
+}
